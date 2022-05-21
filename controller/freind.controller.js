@@ -64,6 +64,7 @@ export const acceptInvitaion = async (req, res) => {
   const pendingInvitaions = await FriendInvitaion.find({
     reciverId: reciver._id,
   });
+  console.log(pendingInvitaions);
   await updateFriendList(reciver._id);
 
   await updateFriendList(sender._id);

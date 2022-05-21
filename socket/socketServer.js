@@ -20,9 +20,9 @@ export const connectSocketServer = (server) => {
   });
 
   const boradcastOnlineUsers = () => {
-    const onlineusersList = getOnlineUsers();
+    const onlineUsersList = getOnlineUsers();
 
-    io.emit("connected_users", onlineusersList);
+    io.emit("connected_users", onlineUsersList);
   };
   io.use(socketAuth);
   boradcastOnlineUsers();

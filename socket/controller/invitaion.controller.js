@@ -5,7 +5,7 @@ import { getIoInstance } from "../../index.js";
 export const upadatePendingInvitaions = async (userId) => {
   const pendingInvitaions = await FriendInvitaion.find({
     reciverId: userId,
-  }).populate("senderId", "email username");
+  }).populate("senderId", "email username image");
 
   const io = getIoInstance;
   const onlineRecivers = [];

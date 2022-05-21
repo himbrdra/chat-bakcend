@@ -15,3 +15,5 @@ export const handleCall = async (callee, socket) => {
     }
   });
 };
+
+export const handleVideoCall = async () => {};

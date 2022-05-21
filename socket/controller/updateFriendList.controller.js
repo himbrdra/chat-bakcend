@@ -11,12 +11,14 @@ export const updateFriendList = async (userId) => {
   const user = await User.findById(userId, {
     _id: 1,
     friends: 1,
-  }).populate("friends", "_id username");
+  }).populate("friends", "_id username image");
+  console.log(user);
 
   const friendList = user.friends.map((friend) => {
     return {
       id: friend._id,
       username: friend.username,
+      image: friend.image,
     };
   });
 

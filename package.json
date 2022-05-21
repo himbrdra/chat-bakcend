@@ -16,10 +16,13 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cloudinary": "^1.30.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "env": "^0.0.2",
     "express": "^4.17.3",
+    "express-form-data": "^2.0.18",
+    "fileupload": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.10",
     "socket.io": "^4.4.1"
